@@ -27,7 +27,7 @@ public class CadastroFuncionario {
 	private String telefone;
 	
 	@NotBlank(message = "O atributo Nome é obrigatório!")
-	private LocalDateTime dt_contratacao;
+	private String dt_contratacao;
 
 	public Long getId() {
 		return id;
@@ -61,11 +61,11 @@ public class CadastroFuncionario {
 		this.telefone = telefone;
 	}
 
-	public LocalDateTime getDt_contratacao() {
+	public String getDt_contratacao() {
 		return dt_contratacao;
 	}
 
-	public void setDt_contratacao(LocalDateTime dt_contratacao) {
+	public void setDt_contratacao(String dt_contratacao) {
 		this.dt_contratacao = dt_contratacao;
 	}
 

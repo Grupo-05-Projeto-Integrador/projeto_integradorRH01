@@ -17,6 +17,6 @@ public interface CadastroRepository extends JpaRepository<CadastroFuncionario, L
 	
 	public List<CadastroFuncionario> findAllByTelefoneContainingIgnoreCase(@Param("telefone") String telefone);
 	
-	//public List<CadastroFuncionario> findAllByDt_contratacaoContainingIgnoreCase(@Param("dt_contratacao") LocalDateTime dt_contratacao);
+	//public List<CadastroFuncionario> findAllByDt_contratacaoContainingIgnoreCase(@Param("dt_contratacao") String dt_contratacao);
 
 }

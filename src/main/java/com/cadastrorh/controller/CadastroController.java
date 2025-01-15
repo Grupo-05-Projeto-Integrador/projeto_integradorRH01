@@ -60,10 +60,10 @@ public class CadastroController {
 		return ResponseEntity.ok(cadastroRepository.findAllByTelefoneContainingIgnoreCase(telefone));
 	}
 	
-	//@GetMapping("/dt_contratacao/{dt_contratacao}") // Consultar por Dt_Contratação
-	//public ResponseEntity<List<CadastroFuncionario>> getByDt_contratacao(@PathVariable LocalDateTime dt_contratacao) {
-		//return ResponseEntity.ok(cadastroRepository.findAllByDt_contratacaoContainingIgnoreCase(dt_contratacao));
-	//}
+	/*@GetMapping("/dt_contratacao/{dt_contratacao}") // Consultar por Dt_Contratação
+	public ResponseEntity<List<CadastroFuncionario>> getByDt_contratacao(@PathVariable String dt_contratacao) {
+		return ResponseEntity.ok(cadastroRepository.findAllByDt_contratacaoContainingIgnoreCase(dt_contratacao));
+	}*/
 
 
 	@PostMapping // Criar um cadastro
